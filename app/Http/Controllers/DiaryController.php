@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use App\Http\Requests\DiaryRequest;
 
 
 class DiaryController extends Controller
@@ -44,7 +45,7 @@ class DiaryController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function store(DiaryRequest $request)
     {
         $diary = Diary::create([
             'user_id' => \Auth::user()->id,
@@ -78,7 +79,7 @@ class DiaryController extends Controller
         ]);
     }
 
-    public function update(Request $request, string $id)
+    public function update(DiaryRequest $request, string $id)
     {
             $diary = Diary::find($id);
             $diary->update($request->only(

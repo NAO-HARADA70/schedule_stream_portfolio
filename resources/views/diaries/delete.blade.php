@@ -3,6 +3,7 @@
 @section('title', $title)
 
 @section('content')
+<div class="page_delete">
     <div class="delete_alert">
         <p>本当に削除しますか？</p>
         <p>※削除後は復元できません！</p>
@@ -29,6 +30,6 @@
         <p class="after_body">{{ $diary->after_body }}</p>
         <p class="created_at">（{{ $diary->user->name }}）　　{{ $diary->created_at }}</p>
     </div>
-
+</div>
 
 @endsection

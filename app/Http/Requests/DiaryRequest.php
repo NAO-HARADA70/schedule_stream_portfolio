@@ -24,7 +24,7 @@ class DiaryRequest extends FormRequest
         return [
             'title' => ['required','min:2', 'max:20'],
             'stream_title' => ['required','min:2', 'max:100'],
-            'stream_url' => ['required','min:2', 'max:20'],
+            'stream_url' => ['required','min:2', 'max:255'],
             'before_body' => ['required','min:2', 'max:1000'],
             'after_body' => ['required','min:2', 'max:1000'],
             'stream_start' => ['required']

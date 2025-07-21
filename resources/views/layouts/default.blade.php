@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/sanitize.css', 'resources/css/app.css'])
 </head>
 
 <body>

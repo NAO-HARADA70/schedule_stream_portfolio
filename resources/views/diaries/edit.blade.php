@@ -3,6 +3,7 @@
 @section('title', $title)
 
 @section('content')
+<div class="page_edit">
     <h1>{{ $title }}</h1>
     <form method="POST" action="{{ route('diaries.update', $diary) }}">
         @csrf
@@ -57,4 +58,5 @@
     </form>
 
     <p><a href="{{route('diaries.show', $diary)}}">戻る</a></p>
+</div>
 @endsection

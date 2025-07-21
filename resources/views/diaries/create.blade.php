@@ -3,6 +3,7 @@
 @section('title', $title)
 
 @section('content')
+<div class="page_diary_create">
     <h1>{{ $title }}</h1>
     <form method="POST" action="{{ route('diaries.store') }}">
         @csrf
@@ -54,4 +55,5 @@
 
         <input type="submit" value="投稿">
     </form>
+</div>
 @endsection

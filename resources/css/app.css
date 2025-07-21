@@ -13,9 +13,22 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+p{
+    margin: 5px;
+}
+
 li{
     list-style: none;
  }
+
+ a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main_content{
+    margin-top: 10px;
+}
 
 .header_nav {
     display: flex;
@@ -34,9 +47,29 @@ li{
     color: green;
 }
 
+h1{
+    margin-bottom: 50px;
+}
+
+div input{
+    margin: 20px 0;
+    background-color: white;
+    border: solid 1px black;
+}
+
+textarea{
+    margin: 20px 0;
+    background-color: white;
+    border: solid 1px black;
+}
+
 .main_content{
     background-color:rgb(230, 242, 255);
     padding: 50px 10px;
+}
+
+.page_top span{
+    font-size: 30px;
 }
 
 .diary_box{
@@ -62,8 +95,11 @@ li{
 }
 
 .diary_box .after_body{
-    margin-top: 50px;
     padding-bottom: 60px;
+}
+
+.diary_box .created_at{
+    text-align: right;
 }
 
 .diary_create div{
@@ -78,3 +114,6 @@ li{
     display: block;
 }
 
+.diary_show p{
+    margin: 20px 0;
+}
